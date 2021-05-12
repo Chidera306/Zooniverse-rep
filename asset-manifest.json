@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/zooniverse-rep/static/css/main.33fba358.chunk.css",
+    "main.js": "/zooniverse-rep/static/js/main.a470b5d5.chunk.js",
+    "main.js.map": "/zooniverse-rep/static/js/main.a470b5d5.chunk.js.map",
+    "runtime-main.js": "/zooniverse-rep/static/js/runtime-main.112b92fa.js",
+    "runtime-main.js.map": "/zooniverse-rep/static/js/runtime-main.112b92fa.js.map",
+    "static/js/2.dcb0593d.chunk.js": "/zooniverse-rep/static/js/2.dcb0593d.chunk.js",
+    "static/js/2.dcb0593d.chunk.js.map": "/zooniverse-rep/static/js/2.dcb0593d.chunk.js.map",
+    "index.html": "/zooniverse-rep/index.html",
+    "static/css/main.33fba358.chunk.css.map": "/zooniverse-rep/static/css/main.33fba358.chunk.css.map",
+    "static/js/2.dcb0593d.chunk.js.LICENSE.txt": "/zooniverse-rep/static/js/2.dcb0593d.chunk.js.LICENSE.txt",
+    "static/media/history-img.3343a53d.jpeg": "/zooniverse-rep/static/media/history-img.3343a53d.jpeg",
+    "static/media/home-computer.9f847c10.png": "/zooniverse-rep/static/media/home-computer.9f847c10.png",
+    "static/media/home-researchers.2ade071e.jpg": "/zooniverse-rep/static/media/home-researchers.2ade071e.jpg",
+    "static/media/home-video.9bf8272f.mp4": "/zooniverse-rep/static/media/home-video.9bf8272f.mp4",
+    "static/media/star-img.7169e144.jpeg": "/zooniverse-rep/static/media/star-img.7169e144.jpeg",
+    "static/media/whale-img-04.81328c3f.jpeg": "/zooniverse-rep/static/media/whale-img-04.81328c3f.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.112b92fa.js",
+    "static/js/2.dcb0593d.chunk.js",
+    "static/css/main.33fba358.chunk.css",
+    "static/js/main.a470b5d5.chunk.js"
+  ]
+}
