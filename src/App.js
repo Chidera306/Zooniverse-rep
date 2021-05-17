@@ -45,24 +45,34 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
      
-       <Header />
+      
     <div className={classes.container}>
       
+    <Header />
       <Switch>
-        <Route exact from="/" render={props => <Home {...props} />} />
-        <Route exact path="/projects" render={props => <Projects {...props} />} />
+      
+        {/* <Route exact from="/" render={props => <Home {...props} />} /> */}
+        <Route exact path="/" component={Home} />
+        <Route exact path="/projects" component={Projects} />
+        <Route exact path="/about" component={About} />
+        {/* <Route exact path="/" component={Home} /> */}
+        <Route exact path="/get-involved" component={GetInvolved} />
+        <Route exact path="/talk" component={Talk} />
+        <Route exact path="/build-project" component={BuildProject} />
+        <Route exact path="/news" component={News} />
+        {/* <Route exact path="/projects" render={props => <Projects {...props} />} />
         <Route exact path="/about" render={props => <About {...props} />} />
         <Route exact path="/get-involved" render={props => <GetInvolved {...props} />} />
         <Route exact path="/talk" render={props => <Talk {...props} />} />
         <Route exact path="/build-project" render={props => <BuildProject {...props} />} />
-        <Route exact path="/news" render={props => <News {...props} />} />
+        <Route exact path="/news" render={props => <News {...props} />} /> */}
 
         <Route exact path="/sign-in" render={props => <BuildProject {...props} />} />
     
-        <Route exact path="/zooniverseLogo" render={props => <Home {...props} />} />
+        
        
       </Switch>
-      
+     
       </div>
       
       </ThemeProvider>

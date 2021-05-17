@@ -1,5 +1,6 @@
 import React from 'react'
 import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles'
@@ -85,14 +86,14 @@ const Works = () => {
     <Grid className={classes.textCenter}>
       <Grid>
       <h4>THE ZOONIVERSE WORKS</h4>
-      <p className={classes.number}>250,469,827</p>
-      <p className={classes.numberText}>classifications so far by <br/>
-      124,921 registered volunteers</p>
+      <Typography className={classes.number}>250,469,827</Typography>
+      <Typography className={classes.numberText}>classifications so far by <br/>
+      124,921 registered volunteers</Typography>
       </Grid>
       <Box className={classes.vibrant}>
-        <p><span className={classes.bold}>A vibrant community.</span> Zooniverse gives people of all ages and backgrounds the <br/>chance to participate in real research with over 50 active online citizen science<br/> projects. Work with 1.6 million registered users around the world to contribute to research<br/> projects led by hundreds of researchers.</p>
+        <Typography><span className={classes.bold}>A vibrant community.</span> Zooniverse gives people of all ages and backgrounds the <br/>chance to participate in real research with over 50 active online citizen science<br/> projects. Work with 1.6 million registered users around the world to contribute to research<br/> projects led by hundreds of researchers.</Typography>
       </Box>
-      <p>SIGN IN OR REGISTER TO GET STARTED</p>
+      <Typography>SIGN IN OR REGISTER TO GET STARTED</Typography>
       <Box>
         <Button className= {classes.btnBox3}>Sign in</Button>
         <Button className={classes.btnBox4}>Register</Button>

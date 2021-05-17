@@ -21,19 +21,45 @@ const useStyles = makeStyles((theme) => ({
   
 
   root:{
-    width: '80%'
+    width: '80%',
+    height: '62%',
+    overflow:'hidden',
+    backgroundColor: 'red',
+    transition: 'all ease-in-out 5s', 
+    '&:hover':{
+      overflow: 'visible',
+     
+    }
+   
   },
+
+  cardHeader: {
+    fontSize: '10px',
+    color: '#fff',
+    fontStyle: 'italic'
+  },
+
 
  text: {
   position: 'relative',
    textAlign: 'center',
-   marginBottom: '-1em'
+   marginBottom: '-1em',
+   color: '#00979d',
+   fontFamily: 'Oswald, sans-serif',
+   fontSize: '1.25em',
+   letterSpacing: '0.16em',
+   textTransform: 'uppercase'
  },
 
  imageList: {
    Width: '100%',
    margin: '4em'
- }
+ },
+
+//  CardContent: {
+//    display: 'none',
+//  }
+
 
     
 }));
@@ -62,11 +88,11 @@ const FeaturedProjects = () => {
         <Grid item xs={12} sm={6} md={4} lg={3} xl={3}>  
           <Card className={classes.root} >
            
-           <img src={seabird} alt='' width='100%' height='100%' />
-             <CardHeader 
+           <img src={seabird} alt='' width='246px' height='250px' />
+             <CardHeader  className={classes.cardHeader}
              title='SEABIRDWATCH'
              />
-             <CardContent>
+             <CardContent className={classes.CardContent}>
                <Typography variant='body2' color='textSecondary' component='p'>
                  NEW - Round Island petrels
                </Typography>
@@ -79,11 +105,11 @@ const FeaturedProjects = () => {
         <Grid item xs={12} sm={6} md={4} lg={3} xl={3}>
           <Card className={classes.root}  width='100%' height='100%'>
            
-           <img src={whale} alt='' width='100%' height='100%' />
-             <CardHeader 
+           <img src={whale} alt=''  width='246px' height='250px' />
+             <CardHeader  className={classes.cardHeader}
              title='BELUGA BITS'
              />
-             <CardContent>
+             <CardContent  className={classes.CardContent}>
                <Typography variant='body2' color='textSecondary' component='p'>
                Examine underwater photos of wild beluga whales and help us identify the age, sex, and group size. We also need keen eye to look for identifying marks to recognize beluga that return to this location year after year.
                </Typography>
@@ -94,11 +120,11 @@ const FeaturedProjects = () => {
         <Grid item xs={12} sm={6} md={4} lg={3} xl={3}>
           <Card className={classes.root}  width='100%' height='100%'>
            
-           <img src={history} alt='' width='100%' height='100%'  />
-             <CardHeader 
+           <img src={history} alt=''  width='246px' height='250px'  />
+             <CardHeader  className={classes.cardHeader}
              title='DARK ENERGY EXPLORER' 
              />
-             <CardContent>
+             <CardContent className={classes.CardContent}>
                <Typography variant='body2' color='textSecondary' component='p'>
                  Identify distant galaxies to help measure dark energy when the just ~2-3 billion years old
                </Typography>
@@ -111,10 +137,10 @@ const FeaturedProjects = () => {
 
         <Grid item xs={12} sm={6} md={4} lg={3} xl={3}>
           <Card className={classes.root}  width='100%' height='100%'>
-          <img src={star} alt='' width='250px' height='250px' />
-    <CardHeader 
+          <img src={star} alt='' width='246px' height='250px' />
+    <CardHeader className={classes.cardHeader}
       title='CLIMATE HISTORY AUSTRALIA' />
-             <CardContent>
+             <CardContent className={classes.CardContent}>
                <Typography variant='body2' color='textSecondary' component='p'>
                  Help create Australia's longest daily  weather records
                </Typography>

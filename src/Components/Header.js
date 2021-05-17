@@ -10,6 +10,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
 import Button from "@material-ui/core/Button";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
+// import Home from "../Pages/Home";
 
 
 
@@ -138,7 +139,7 @@ const Header = props => {
       <AppBar position="static" className={classes.appBar} elevation={0} color="primary" >
         <Toolbar color="secondary">
           
-          <svg role="img" className={classes.zooniverseLogo} viewBox="0 0 100 100" width="1.8em" height="1.8em" ><g fill="currentColor" stroke="none" transform="translate(50, 50)"><path d="M 0 -45 A 45 45 0 0 1 0 45 A 45 45 0 0 1 0 -45 Z M 0 -30 A 30 30 0 0 0 0 30 A 30 30 0 0 0 0 -30 Z"></path><path d="M 0 -14 A 14 14 0 0 1 0 14 A 14 14 0 0 1 0 -14 Z"></path><ellipse cx="0" cy="0" rx="6" ry="65" transform="rotate(50)"></ellipse></g></svg>
+          {/* <svg role="img" className={classes.zooniverseLogo} viewBox="0 0 100 100" width="1.8em" height="1.8em" ><g fill="currentColor" stroke="none" transform="translate(50, 50)"><path d="M 0 -45 A 45 45 0 0 1 0 45 A 45 45 0 0 1 0 -45 Z M 0 -30 A 30 30 0 0 0 0 30 A 30 30 0 0 0 0 -30 Z"></path><path d="M 0 -14 A 14 14 0 0 1 0 14 A 14 14 0 0 1 0 -14 Z"></path><ellipse cx="0" cy="0" rx="6" ry="65" transform="rotate(50)"></ellipse></g></svg> */}
             
           
          
@@ -182,6 +183,7 @@ const Header = props => {
           <div className={classes.headerOptions}>
             <Button 
             onClick={() => handleButtonClick("/")}>
+            <svg role="img" className={classes.zooniverseLogo} viewBox="0 0 100 100" width="1.8em" height="1.8em" ><g fill="currentColor" stroke="none" transform="translate(50, 50)"><path d="M 0 -45 A 45 45 0 0 1 0 45 A 45 45 0 0 1 0 -45 Z M 0 -30 A 30 30 0 0 0 0 30 A 30 30 0 0 0 0 -30 Z"></path><path d="M 0 -14 A 14 14 0 0 1 0 14 A 14 14 0 0 1 0 -14 Z"></path><ellipse cx="0" cy="0" rx="6" ry="65" transform="rotate(50)"></ellipse></g></svg>
            </Button>
 
             <Button className={classes.navLinks}
@@ -237,3 +239,4 @@ const Header = props => {
 };
 
 export default withRouter(Header);
+// export default Header;

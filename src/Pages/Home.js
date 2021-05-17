@@ -11,7 +11,7 @@ import Works from '../Components/Works';
 
 
 
-const Home = props => {
+const Home =() => {
   return (
     <div>
     
